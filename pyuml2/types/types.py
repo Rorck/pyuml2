@@ -31,7 +31,7 @@ def unlimited_from_string(x):
     if x == '*':
         return -1
     value = int(x)
-    if value >= 0:
+    if value >= 0 or value == -1:
         return value
     raise ValueError('UnlimitedNatural must be a >= 0 value')
 
